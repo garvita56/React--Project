@@ -1,0 +1,115 @@
+#body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-banner h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  #li {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #li li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  #li li:hover {
+    color: #ffa500;
+    transform: scale(1.1);
+  }
+  
+  /* Outlet Styling */
+  #outlet {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #929292;
+    border: 1px solid #ddd;
+    margin: 10px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #li {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    #outlet {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .footer {
+      font-size: 12px;
+    }
+  }
+/* mainlayout.css */
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+/* Dark red for text */
+  text-align: center;
+}
+
+#error {
+  font-size: 48px; /* Larger font for emphasis */
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#diserror {
+  color: black;
+  font-size: 72px; /* Big font for "ERROR 404" */
+  margin: 0;
+}
+
+#messsage p {
+  font-size: 24px; /* Slightly smaller font for the message */
+  margin: 10px 0;
+}
+
+
+  
